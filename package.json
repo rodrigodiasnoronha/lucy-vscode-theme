@@ -7,6 +7,7 @@
   "repository": "https://github.com/juliettepretot/lucy-vscode",
   "scripts": {
     "build": "node --experimental-modules src/index.mjs",
+    "build:jetbrains": "node --experimental-modules jetbrains/scripts/build-theme.mjs",
     "release": "npm run build && git add dist && git commit -m build-theme && npm version patch & vsce publish && git push"
   },
   "engines": {

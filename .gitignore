@@ -3,6 +3,11 @@
 # dependencies
 /node_modules
 
+# JetBrains plugin build output
+/jetbrains/build
+/jetbrains/.gradle
+/jetbrains/.intellijPlatform
+
 # misc
 .DS_Store
 .env.local

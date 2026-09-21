@@ -1,0 +1,15 @@
+<idea-plugin>
+  <id>com.juliettepretot.lucy</id>
+  <name>lucy</name>
+  <vendor url="https://github.com/juliettepretot/lucy-vscode">Juliette Pretot</vendor>
+  <description><![CDATA[
+    Soft but clear syntax theme. Ships two variants: lucy and lucy-evening.
+  ]]></description>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="b6f2f5b0-3f8b-4b7a-9b3a-6c1a7f6a2b10" path="/theme/lucy.theme.json"/>
+    <themeProvider id="1a9d5f7e-8c2b-4e3a-9d5b-2f4e6a8c0d12" path="/theme/lucy-evening.theme.json"/>
+  </extensions>
+</idea-plugin>
