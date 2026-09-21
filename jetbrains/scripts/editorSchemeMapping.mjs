@@ -20,7 +20,12 @@ export const editorColors = (colors) => ({
   ADDED_LINES_COLOR: colors.call,
   DELETED_LINES_COLOR: colors.base1,
   TEARLINE_COLOR: colors.background4,
-  METHOD_SEPARATORS_COLOR: colors.background4
+    METHOD_SEPARATORS_COLOR: colors.background4,
+
+    // Console/terminal background (the classic terminal engine and Run/Debug
+    // panels read this; the new terminal engine reads Terminal.background from
+    // uiMapping.mjs instead - both are set so either engine is themed).
+    CONSOLE_BACKGROUND_KEY: colors.background1
 })
 
 // DefaultLanguageHighlighterColors keys: the small, generic vocabulary that
@@ -78,5 +83,28 @@ export const editorAttributes = (colors) => ({
     background: colors.accent2,
     fontType: FONT_TYPE.BOLD
   },
-  BAD_CHARACTER: { foreground: colors.base1, background: colors.background4 }
+    BAD_CHARACTER: {foreground: colors.base1, background: colors.background4},
+
+    // ANSI-style console/terminal output colors.
+    // ponytail: the palette has no dedicated blue, so BLUE reuses the cyan
+    // accent and bright variants reuse their normal counterpart - add a
+    // distinct blue/bright ramp to colors.mjs if that distinction matters later.
+    CONSOLE_NORMAL_OUTPUT: {foreground: colors.pure2},
+    CONSOLE_ERROR_OUTPUT: {foreground: colors.base1},
+    CONSOLE_SYSTEM_OUTPUT: {foreground: colors.dim3},
+    CONSOLE_BLACK_OUTPUT: {foreground: colors.background4},
+    CONSOLE_GRAY_OUTPUT: {foreground: colors.dim3},
+    CONSOLE_WHITE_OUTPUT: {foreground: colors.pure1},
+    CONSOLE_RED_OUTPUT: {foreground: colors.base1},
+    CONSOLE_GREEN_OUTPUT: {foreground: colors.call},
+    CONSOLE_YELLOW_OUTPUT: {foreground: colors.base2},
+    CONSOLE_BLUE_OUTPUT: {foreground: colors.accent1},
+    CONSOLE_MAGENTA_OUTPUT: {foreground: colors.const},
+    CONSOLE_CYAN_OUTPUT: {foreground: colors.accent1},
+    CONSOLE_RED_BRIGHT_OUTPUT: {foreground: colors.base1},
+    CONSOLE_GREEN_BRIGHT_OUTPUT: {foreground: colors.call},
+    CONSOLE_YELLOW_BRIGHT_OUTPUT: {foreground: colors.base2},
+    CONSOLE_BLUE_BRIGHT_OUTPUT: {foreground: colors.accent1},
+    CONSOLE_MAGENTA_BRIGHT_OUTPUT: {foreground: colors.const},
+    CONSOLE_CYAN_BRIGHT_OUTPUT: {foreground: colors.accent1}
 })
