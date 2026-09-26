@@ -89,5 +89,26 @@ export default (colors) => ({
     'Terminal.background': colors.background1,
     'Terminal.foreground': colors.pure2,
     'Terminal.selectionBackground': colors.selection,
-    'Terminal.selectionInactiveBackground': colors.background4
+  'Terminal.selectionInactiveBackground': colors.background4,
+
+  // ── Breadcrumbs (file path bar above the editor) ────────────────
+  'Breadcrumbs.currentBackground': colors.background3,
+  'Breadcrumbs.currentForeground': colors.pure2,
+  'Breadcrumbs.defaultForeground': colors.dim3,
+
+  // ── Code completion popup ───────────────────────────────────────
+  'CompletionPopup.selectionBackground': colors.background3,
+  'CompletionPopup.matchForeground': colors.base2,
+
+  // ── Progress bar ────────────────────────────────────────────────
+  'ProgressBar.progressColor': colors.base2,
+  'ProgressBar.indeterminateStartColor': colors.base2,
+  'ProgressBar.indeterminateEndColor': colors.accent1,
+
+  // ── Banner (top-of-editor info bars) ────────────────────────────
+  'Banner.background': colors.background4,
+  'Banner.foreground': colors.dim4,
+
+  // ── Editor tab strip border ─────────────────────────────────────
+  'EditorTabs.borderColor': colors.background1
 })

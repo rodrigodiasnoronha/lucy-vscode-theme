@@ -65,6 +65,17 @@
     "Terminal.background": "#100f13",
     "Terminal.foreground": "#ded7d0",
     "Terminal.selectionBackground": "#493b47",
-    "Terminal.selectionInactiveBackground": "#2f2c32"
+    "Terminal.selectionInactiveBackground": "#2f2c32",
+    "Breadcrumbs.currentBackground": "#1e1d23",
+    "Breadcrumbs.currentForeground": "#ded7d0",
+    "Breadcrumbs.defaultForeground": "#938884",
+    "CompletionPopup.selectionBackground": "#1e1d23",
+    "CompletionPopup.matchForeground": "#f0ce59",
+    "ProgressBar.progressColor": "#f0ce59",
+    "ProgressBar.indeterminateStartColor": "#f0ce59",
+    "ProgressBar.indeterminateEndColor": "#56c6d5",
+    "Banner.background": "#2f2c32",
+    "Banner.foreground": "#ccb5ca",
+    "EditorTabs.borderColor": "#100f13"
   }
 }

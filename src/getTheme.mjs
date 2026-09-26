@@ -31,7 +31,7 @@ export default ({ name, colors }) => ({
     'inputValidation.errorBorder': colors.base1,
     'inputValidation.infoBackground': colors.background3Half,
     'inputValidation.infoBorder': colors.accent1,
-    'inputValidation.warningBackground': colors.bacbackground3Halfkground4,
+    'inputValidation.warningBackground': colors.background3Half,
     'inputValidation.warningBorder': colors.accent2,
     'scrollbar.shadow': colors.background3,
     'scrollbarSlider.activeBackground': colors.translucent9,

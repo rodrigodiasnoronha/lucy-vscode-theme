@@ -106,5 +106,36 @@ export const editorAttributes = (colors) => ({
     CONSOLE_YELLOW_BRIGHT_OUTPUT: {foreground: colors.base2},
     CONSOLE_BLUE_BRIGHT_OUTPUT: {foreground: colors.accent1},
     CONSOLE_MAGENTA_BRIGHT_OUTPUT: {foreground: colors.const},
-    CONSOLE_CYAN_BRIGHT_OUTPUT: {foreground: colors.accent1}
+  CONSOLE_CYAN_BRIGHT_OUTPUT: {foreground: colors.accent1},
+
+  // ── Search & identifier highlights ──────────────────────────────
+  // Equivalent to VS Code's editor.selectionHighlightBackground /
+  // editor.wordHighlightBackground (both use translucent2).
+  SEARCH_RESULT_ATTRIBUTES: {background: colors.translucent2},
+  IDENTIFIER_UNDER_CARET: {background: colors.translucent3},
+  WRITE_IDENTIFIER_UNDER_CARET: {background: colors.translucent2},
+
+  // ── Brace matching ──────────────────────────────────────────────
+  // VS Code: editorBracketMatch.background = background3,
+  //          editorBracketMatch.border = dim2.
+  MATCHED_BRACE_ATTRIBUTES: {foreground: colors.pure2, background: colors.background3},
+  UNMATCHED_BRACE_ATTRIBUTES: {foreground: colors.base1, background: colors.background4},
+
+  // ── Error / Warning / Info squigglies ────────────────────────────
+  // Maps to VS Code's editorError/Warning/Info.foreground.
+  ERRORS_ATTRIBUTES: {foreground: colors.base1},
+  WARNING_ATTRIBUTES: {foreground: colors.accent2},
+  INFO_ATTRIBUTES: {foreground: colors.accent1},
+
+  // ── Diff editor ─────────────────────────────────────────────────
+  // Maps to VS Code's diffEditor.insertedTextBackground / removedTextBackground.
+  DIFF_INSERTED: {background: colors.translucent4},
+  DIFF_DELETED: {background: colors.translucent6},
+  DIFF_MODIFIED: {background: colors.translucent2},
+
+  // ── Folded code regions ─────────────────────────────────────────
+  FOLDED_TEXT_ATTRIBUTES: {foreground: colors.dim3},
+
+  // ── Injected language fragments (e.g. SQL in Java strings) ──────
+  INJECTED_LANGUAGE_FRAGMENT: {background: colors.background2}
 })

@@ -315,5 +315,72 @@
               <option name="FOREGROUND" value="56c6d5"/>
       </value>
     </option>
+      <option name="SEARCH_RESULT_ATTRIBUTES">
+          <value>
+              <option name="BACKGROUND" value="ffffff26"/>
+          </value>
+      </option>
+      <option name="IDENTIFIER_UNDER_CARET">
+          <value>
+              <option name="BACKGROUND" value="ffffff0d"/>
+          </value>
+      </option>
+      <option name="WRITE_IDENTIFIER_UNDER_CARET">
+          <value>
+              <option name="BACKGROUND" value="ffffff26"/>
+          </value>
+      </option>
+      <option name="MATCHED_BRACE_ATTRIBUTES">
+          <value>
+              <option name="FOREGROUND" value="ded7d0"/>
+              <option name="BACKGROUND" value="1e1d23"/>
+          </value>
+      </option>
+      <option name="UNMATCHED_BRACE_ATTRIBUTES">
+          <value>
+              <option name="FOREGROUND" value="ff7da3"/>
+              <option name="BACKGROUND" value="2f2c32"/>
+          </value>
+      </option>
+      <option name="ERRORS_ATTRIBUTES">
+          <value>
+              <option name="FOREGROUND" value="ff7da3"/>
+          </value>
+      </option>
+      <option name="WARNING_ATTRIBUTES">
+          <value>
+              <option name="FOREGROUND" value="ffac5c"/>
+          </value>
+      </option>
+      <option name="INFO_ATTRIBUTES">
+          <value>
+              <option name="FOREGROUND" value="56c6d5"/>
+          </value>
+      </option>
+      <option name="DIFF_INSERTED">
+          <value>
+              <option name="BACKGROUND" value="7ec49d0d"/>
+          </value>
+      </option>
+      <option name="DIFF_DELETED">
+          <value>
+              <option name="BACKGROUND" value="ff84ad0d"/>
+          </value>
+      </option>
+      <option name="DIFF_MODIFIED">
+          <value>
+              <option name="BACKGROUND" value="ffffff26"/>
+          </value>
+      </option>
+      <option name="FOLDED_TEXT_ATTRIBUTES">
+          <value>
+              <option name="FOREGROUND" value="938884"/>
+          </value>
+      </option>
+      <option name="INJECTED_LANGUAGE_FRAGMENT">
+          <value>
+              <option name="BACKGROUND" value="17161b"/>
+          </value>
+      </option>
   </attributes>
 </scheme>
